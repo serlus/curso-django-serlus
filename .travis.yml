@@ -5,4 +5,5 @@ install:
   - pip install -q pipenv codecov
   - pipenv sync --dev
 script:
-  - flake8
+  - pipenv run flake8
+  - pipenv run pytest

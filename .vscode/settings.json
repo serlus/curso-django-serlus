@@ -1,4 +1,10 @@
 {
     "workbench.settings.openDefaultKeybindings": true,
-    "python.pythonPath": ".venv/bin/python"
+    "python.pythonPath": ".venv/bin/python",
+    "python.testing.pytestArgs": [
+        "pypro"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true
 }
