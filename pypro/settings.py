@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-from typing import cast
+# from typing import cast
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 from decouple import config, Csv
