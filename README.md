@@ -8,4 +8,5 @@ Aplicação disponivel em https://serluscasas.herokuapp.com/
 [![Updates](https://pyup.io/repos/github/serlus/curso-django-serlus/shield.svg)](https://pyup.io/repos/github/serlus/curso-django-serlus/)
 [![Python 3](https://pyup.io/repos/github/serlus/curso-django-serlus/python-3-shield.svg)](https://pyup.io/repos/github/serlus/curso-django-serlus/)
  
--[ ]
+- [ ] teste
+- [X] check
