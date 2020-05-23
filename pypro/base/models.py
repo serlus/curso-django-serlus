@@ -12,16 +12,16 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     Email and password are required. Other fields are optional.
     """
-    username_validator = UnicodeUsernameValidator()
 
-    
     first_name = models.CharField(_('first name'), max_length=30, blank=True)
-    email = models.EmailField(_('email address'), unique=True)
+    email = models.EmailField(_('email address'), unique=True)  # usuario único
+    # is_staff def usuarios q podem acessar o admin do django
     is_staff = models.BooleanField(
         _('staff status'),
         default=False,
         help_text=_('Designates whether the user can log into this admin site.'),
     )
+    # is_active def usuário q pode se logar dentro do sistema
     is_active = models.BooleanField(
         _('active'),
         default=True,
@@ -30,6 +30,7 @@ class User(AbstractBaseUser, PermissionsMixin):
             'Unselect this instead of deleting accounts.'
         ),
     )
+    # date_joined def data q o usuario entrou no sistema
     date_joined = models.DateTimeField(_('date joined'), default=timezone.now)
 
     # objects = UserManager()
