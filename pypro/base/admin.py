@@ -31,7 +31,7 @@ class UserAdmin(admin.ModelAdmin):
     add_form_template = 'admin/auth/user/add_form.html'
     change_user_password_template = None
     fieldsets = (
-        (None, {'fields': ('first_name,', 'email', 'password')}),
+        (None, {'fields': ('first_name', 'email', 'password')}),
         (_('Permissions'), {
             'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions'),
         }),
@@ -40,7 +40,7 @@ class UserAdmin(admin.ModelAdmin):
     add_fieldsets = (
         (None, {
             'classes': ('wide',),
-            'fields': ('first_name,', 'email', 'password1', 'password2'),
+            'fields': ('first_name', 'email', 'password1', 'password2'),
         }),
     )
     form = UserChangeForm
