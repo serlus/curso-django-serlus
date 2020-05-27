@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-from typing import cast
+# from typing import cast
 import dj_database_url
 
 from functools import partial
