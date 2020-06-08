@@ -18,10 +18,10 @@
 	<script src="{% static 'js/scripts.js' %}"></script>
 
   </head>
-  <body>
+  <body class="has-ledge">
 	  
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="{% url 'base:home' %}">Gab Casas</a>
+		<a class="navbar-brand" href="{% url 'base:home' %}">soy lo que soy</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -38,55 +38,71 @@
 		<div class="col-md-12">
 			<div class="jumbotron">
 				<h2>
-					Curso de criatividade criativa com Gab Casas
+					Breve descripcion de mi persona
 				</h2>
 				<p>
-					Confira em breve mais informações sobre o curso. 
+					...No hay tres minutos, ni hay cien palabras que me puedan definir. 
 				</p>
 				
 			</div>
+			<div class="card bg-dark text-white">
+				<img src="{% static 'img/gab1.jpg' %}" class="card-img-top" alt="foto de gabriel em uma duna de areia">
+				<div class="card-img-overlay text-center">
+				  <h5 class="card-title">Gabriel Casas</h5>
+				  <p>Montevideo, Uruguay.</p>
+				</div>
+			  </div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="card">
 						<h5 class="card-header">
-							Mais detalhies sobre o instrutor
+							Así soy yo
 						</h5>
 						<div class="card-body">
 							<p class="card-text">
 								<img src="{% static 'img/gab.jpg' %}" alt="foto de gabriel casas" 
 								class="img-thumbnail float-left mr-3"/>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae neque, autem sed deleniti, voluptas illum laboriosam quasi officiis, repellendus nobis libero accusantium atque. Perferendis ad natus ullam accusantium vitae iure.
+								<p>
+								Estoy en un momento de mi vida de descubrimiento, aprendizaje y reconocimiento; quiero disfrutar de la vida, surfear las experiencias que el mundo tenga preparadas para mi, quiero aprender a vivir del mundo, conocer esas costumbres e intercambiar experiencias con gente abierta que este dispuesta a aprender y enseñar.
+								</p>
+								<p>
+								Sobre mi, como me veo? trato de ser extrovertido (para ocultar mi timidez). Intento ser divertido (para maquillar mis ignorancias). Busco ser inteligente (para ser yo quien pregunta primero). Me esfuerzo por ser carismático (para pasar desapercibido cuando hago algo ridículo). Y así resulto interesante (y no se dan cuenta que soy feo!!)
+								</p>
+								<p>
+								Disfruto de la vida, me divierto en ella y por ella, me gusta solucionar problemas, aprendo de ellos, no reniego de los malos momentos, sino los tomo como días de examen de la vida, y estos me hacen ser a diario una mejor persona, y soy muy exigente en eso.
+								</p>
 							</p>
+							<div class="row">
+								<div class="col-sm-6">
+								  <div class="card text-center">
+									<div class="card-body">
+									  <h5 class="card-title">WORK</h5>
+									  <p class="card-text">Correo Uruguayo.</p>
+									</div>
+								  </div>
+								</div>
+								<div class="col-sm-6">
+								  <div class="card text-center">
+									<div class="card-body">
+									  <h5 class="card-title">EDUCATION</h5>
+									  <p class="card-text">Analista de Sistemas</p>
+									  <p>Diseñador gráfico</p>
+									  <p>Periodista</p>
+									</div>
+								  </div>
+								</div>
+							  </div>
 						</div>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
 </div>
 
 <footer class="main-footer mt-5 pt-5  text-light">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h3>Entre em contato</h3>
-				<address>
-					+55 12 983-010-387
-					<br/>
-					<a href="mailto:gabcasas@gmail.com" class="text-light">gabcasas@gmail.com</a>
-				</address>
-			</div>
-		</div>
-	</div>
-	<div class="rights pb-4">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					{% now 'Y' %} gabcasas. Todos os direitos reservados.
-				</div>
-			</div>
-		</div>
-	</div>
+	
 </footer>
 	
   </body>
