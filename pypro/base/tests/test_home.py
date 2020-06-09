@@ -18,4 +18,4 @@ def test_title(resp):
 
 
 def test_home_link(resp):
-    assert_contains(resp, f'href="{reverse("base:home")}">Gab Casas</a>')
+    assert_contains(resp, f'href="{reverse("base:home")}">Soy lo soy</a>')
